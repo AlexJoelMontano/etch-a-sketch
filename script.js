@@ -11,11 +11,13 @@ for(let i = 1; i < 991; i++){
     createDiv.style.backgroundColor = "lightgray";
     
     createDiv.addEventListener("mouseover",() =>{
-        createDiv.style.backgroundColor = "black";
+        createDiv.style.backgroundColor = "transparent";
+        createDiv.style.borderStyle="inset";
     })
 
     let clearBtn = document.querySelector("#reset");
     clearBtn.addEventListener("click", () =>{
         createDiv.style.backgroundColor = "lightgray";
+        createDiv.style.borderStyle="solid";
     })
 }
