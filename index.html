@@ -9,11 +9,13 @@
     <title>Etch-a-sketch</title>
 </head>
 <body>
-    <div class="container"></div>
+    <div class="shakebox">
+        <div class="container"></div>
+    </div>
     <div class="knobs">
         <div class="circles"> </div>
         <span class="logo">Etch-a-sketch</span>
         <div class="circles"> </div>
     </div>
-    <button id="reset">Shake!</button>
+    <button id="reset" onclick="shake(); setTimeout(shakeTimeout(), 1000);">Shake!</button>
 </body>

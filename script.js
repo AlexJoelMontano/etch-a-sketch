@@ -20,4 +20,14 @@ for(let i = 1; i < 991; i++){
         createDiv.style.backgroundColor = "lightgray";
         createDiv.style.borderStyle="solid";
     })
+    
+    
+}
+
+function shake() {
+    let shake = document.querySelector(".shakebox");
+    shake.setAttribute("class","shake");
+
+    let shakeBtn = document.querySelector("#reset");
+    shakeBtn.textContent ="Reset";
 }
